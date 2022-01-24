@@ -99,4 +99,3 @@ C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\bin\Debug\net5.0\System.Net.Http.Form
 C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\bin\Debug\net5.0\System.Web.Http.dll
 C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
 C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\bin\Debug\net5.0\FluentValidation.dll
-C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\obj\Debug\net5.0\ClubsAPI.csproj.CopyComplete

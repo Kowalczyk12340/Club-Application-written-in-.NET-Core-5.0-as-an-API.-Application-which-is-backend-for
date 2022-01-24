@@ -34,7 +34,7 @@ namespace ClubsAPI.Controllers
     }
 
     /// <summary>
-    /// Method to delete chosen club league by id
+    /// Method to get all the players
     /// </summary>
     /// <param name="id"></param>
     /// <returns>NoContent if it is deleted successfully or 404 if not found</returns>
