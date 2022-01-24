@@ -5,9 +5,13 @@ using System.Threading.Tasks;
 
 namespace ClubsAPI.DTOs
 {
-    public class NationalityDto
+  public class NationalityDto
+  {
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public string GetExportObject()
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
+      return $"{Id};{Name};";
     }
+  }
 }

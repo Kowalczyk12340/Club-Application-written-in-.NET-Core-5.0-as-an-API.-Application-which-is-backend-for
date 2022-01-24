@@ -3964,3 +3964,329 @@
    at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
    at NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender.Write(Byte[] bytes, Int32 offset, Int32 count)
    at NLog.Targets.FileTarget.WriteToFile(String fileName, ArraySegment`1 bytes, Boolean initializedNewFile)
+2022-01-24 17:27:58.7827 Info Message Template Auto Format enabled
+2022-01-24 17:27:58.7827 Info Loading assembly: NLog.Web.AspNetCore
+2022-01-24 17:27:58.8776 Info Adding target FileTarget(Name=allfile)
+2022-01-24 17:27:58.8776 Info Adding target FileTarget(Name=exceptions)
+2022-01-24 17:27:58.8776 Info Adding target FileTarget(Name=request-time)
+2022-01-24 17:27:58.9198 Info Validating config: TargetNames=allfile, exceptions, request-time, ConfigItems=45, FilePath=C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\bin\Debug\net5.0\NLog.config
+2022-01-24 17:27:58.9539 Info Configuration initialized.
+2022-01-24 17:27:58.9539 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.11.13229. Product version: 4.7.11+33ed3a9f86277651e93ddf39cda64a046a06778b. GlobalAssemblyCache: False
+2022-01-24 17:28:04.5151 Warn Attempt #0 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 0ms
+2022-01-24 17:28:04.5151 Warn Attempt #1 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 0ms
+2022-01-24 17:28:04.5151 Warn Attempt #2 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 0ms
+2022-01-24 17:28:04.5314 Warn Attempt #3 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 2ms
+2022-01-24 17:28:04.5314 Warn Attempt #4 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 12ms
+2022-01-24 17:28:04.5727 Warn Attempt #5 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 28ms
+2022-01-24 17:28:04.6202 Warn Attempt #6 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 27ms
+2022-01-24 17:28:04.6623 Warn Attempt #7 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 108ms
+2022-01-24 17:28:04.8267 Warn Attempt #8 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 161ms
+2022-01-24 17:28:05.0118 Error FileTarget(Name=allfile): Failed write to file ' C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log'. Exception: System.IO.IOException: Nazwa pliku, nazwa katalogu lub składnia etykiety woluminu jest niepoprawna. : 'C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\ C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at NLog.Internal.FileAppenders.BaseFileAppender.UpdateCreationTime()
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender.Write(Byte[] bytes, Int32 offset, Int32 count)
+   at NLog.Targets.FileTarget.WriteToFile(String fileName, ArraySegment`1 bytes, Boolean initializedNewFile)
+2022-01-24 17:28:05.2509 Warn Attempt #0 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 0ms
+2022-01-24 17:28:05.2509 Warn Attempt #1 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 0ms
+2022-01-24 17:28:05.2697 Warn Attempt #2 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 2ms
+2022-01-24 17:28:05.2697 Warn Attempt #3 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 4ms
+2022-01-24 17:28:05.3143 Warn Attempt #4 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 7ms
+2022-01-24 17:28:05.3486 Warn Attempt #5 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 22ms
+2022-01-24 17:28:05.4058 Warn Attempt #6 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 59ms
+2022-01-24 17:28:05.4771 Warn Attempt #7 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 17ms
+2022-01-24 17:28:05.5052 Warn Attempt #8 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 244ms
+2022-01-24 17:28:05.7582 Error FileTarget(Name=allfile): Failed write to file ' C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log'. Exception: System.IO.IOException: Nazwa pliku, nazwa katalogu lub składnia etykiety woluminu jest niepoprawna. : 'C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\ C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at NLog.Internal.FileAppenders.BaseFileAppender.UpdateCreationTime()
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender.Write(Byte[] bytes, Int32 offset, Int32 count)
+   at NLog.Targets.FileTarget.WriteToFile(String fileName, ArraySegment`1 bytes, Boolean initializedNewFile)
+2022-01-24 17:28:05.7805 Warn Attempt #0 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 0ms
+2022-01-24 17:28:05.7805 Warn Attempt #1 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 0ms
+2022-01-24 17:28:05.7968 Warn Attempt #2 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 2ms
+2022-01-24 17:28:05.7968 Warn Attempt #3 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 2ms
+2022-01-24 17:28:05.8203 Warn Attempt #4 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 0ms
+2022-01-24 17:28:05.8380 Warn Attempt #5 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 9ms
+2022-01-24 17:28:06.0408 Warn Attempt #6 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 39ms
+2022-01-24 17:28:06.0864 Warn Attempt #7 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 0ms
+2022-01-24 17:28:06.0864 Warn Attempt #8 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 162ms
+2022-01-24 17:28:06.3020 Error FileTarget(Name=allfile): Failed write to file ' C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log'. Exception: System.IO.IOException: Nazwa pliku, nazwa katalogu lub składnia etykiety woluminu jest niepoprawna. : 'C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\ C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at NLog.Internal.FileAppenders.BaseFileAppender.UpdateCreationTime()
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender.Write(Byte[] bytes, Int32 offset, Int32 count)
+   at NLog.Targets.FileTarget.WriteToFile(String fileName, ArraySegment`1 bytes, Boolean initializedNewFile)
+2022-01-24 17:31:49.8467 Warn Attempt #0 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 0ms
+2022-01-24 17:31:49.8467 Warn Attempt #1 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 0ms
+2022-01-24 17:31:49.8467 Warn Attempt #2 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 3ms
+2022-01-24 17:31:49.8681 Warn Attempt #3 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 1ms
+2022-01-24 17:31:49.8877 Warn Attempt #4 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 14ms
+2022-01-24 17:31:49.9157 Warn Attempt #5 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 15ms
+2022-01-24 17:31:49.9470 Warn Attempt #6 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 52ms
+2022-01-24 17:31:50.0082 Warn Attempt #7 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 122ms
+2022-01-24 17:31:50.1522 Warn Attempt #8 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 147ms
+2022-01-24 17:31:50.3182 Error FileTarget(Name=allfile): Failed write to file ' C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log'. Exception: System.IO.IOException: Nazwa pliku, nazwa katalogu lub składnia etykiety woluminu jest niepoprawna. : 'C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\ C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at NLog.Internal.FileAppenders.BaseFileAppender.UpdateCreationTime()
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender.Write(Byte[] bytes, Int32 offset, Int32 count)
+   at NLog.Targets.FileTarget.WriteToFile(String fileName, ArraySegment`1 bytes, Boolean initializedNewFile)
+2022-01-24 17:32:20.2198 Warn Attempt #0 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 0ms
+2022-01-24 17:32:20.2636 Warn Attempt #1 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 1ms
+2022-01-24 17:32:20.2755 Warn Attempt #2 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 1ms
+2022-01-24 17:32:20.2917 Warn Attempt #3 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 1ms
+2022-01-24 17:32:20.2994 Warn Attempt #4 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 7ms
+2022-01-24 17:32:20.3153 Warn Attempt #5 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 13ms
+2022-01-24 17:32:20.3315 Warn Attempt #6 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 12ms
+2022-01-24 17:32:20.3472 Warn Attempt #7 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 29ms
+2022-01-24 17:32:20.3798 Warn Attempt #8 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 21ms
+2022-01-24 17:32:20.4095 Error FileTarget(Name=allfile): Failed write to file ' C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log'. Exception: System.IO.IOException: Nazwa pliku, nazwa katalogu lub składnia etykiety woluminu jest niepoprawna. : 'C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\ C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at NLog.Internal.FileAppenders.BaseFileAppender.UpdateCreationTime()
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender.Write(Byte[] bytes, Int32 offset, Int32 count)
+   at NLog.Targets.FileTarget.WriteToFile(String fileName, ArraySegment`1 bytes, Boolean initializedNewFile)
+2022-01-24 17:32:41.7593 Warn Attempt #0 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 0ms
+2022-01-24 17:32:41.7670 Warn Attempt #1 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 0ms
+2022-01-24 17:32:41.7670 Warn Attempt #2 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 3ms
+2022-01-24 17:32:41.7839 Warn Attempt #3 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 6ms
+2022-01-24 17:32:41.7958 Warn Attempt #4 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 14ms
+2022-01-24 17:32:41.8292 Warn Attempt #5 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 16ms
+2022-01-24 17:32:41.9086 Warn Attempt #6 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 28ms
+2022-01-24 17:32:41.9531 Warn Attempt #7 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 77ms
+2022-01-24 17:32:42.0499 Warn Attempt #8 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 122ms
+2022-01-24 17:32:42.1885 Error FileTarget(Name=allfile): Failed write to file ' C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log'. Exception: System.IO.IOException: Nazwa pliku, nazwa katalogu lub składnia etykiety woluminu jest niepoprawna. : 'C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\ C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at NLog.Internal.FileAppenders.BaseFileAppender.UpdateCreationTime()
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender.Write(Byte[] bytes, Int32 offset, Int32 count)
+   at NLog.Targets.FileTarget.WriteToFile(String fileName, ArraySegment`1 bytes, Boolean initializedNewFile)
+2022-01-24 17:42:58.2183 Warn Attempt #0 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 0ms
+2022-01-24 17:42:58.2183 Warn Attempt #1 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 1ms
+2022-01-24 17:42:58.2335 Warn Attempt #2 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 2ms
+2022-01-24 17:42:58.2698 Warn Attempt #3 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 6ms
+2022-01-24 17:42:58.2895 Warn Attempt #4 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 11ms
+2022-01-24 17:42:58.3045 Warn Attempt #5 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 22ms
+2022-01-24 17:42:58.3379 Warn Attempt #6 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 50ms
+2022-01-24 17:42:58.4832 Warn Attempt #7 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 81ms
+2022-01-24 17:42:58.6216 Warn Attempt #8 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 200ms
+2022-01-24 17:42:58.8312 Error FileTarget(Name=allfile): Failed write to file ' C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log'. Exception: System.IO.IOException: Nazwa pliku, nazwa katalogu lub składnia etykiety woluminu jest niepoprawna. : 'C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\ C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at NLog.Internal.FileAppenders.BaseFileAppender.UpdateCreationTime()
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender.Write(Byte[] bytes, Int32 offset, Int32 count)
+   at NLog.Targets.FileTarget.WriteToFile(String fileName, ArraySegment`1 bytes, Boolean initializedNewFile)
+2022-01-24 17:46:22.9554 Warn Attempt #0 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 0ms
+2022-01-24 17:46:22.9554 Warn Attempt #1 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 0ms
+2022-01-24 17:46:22.9722 Warn Attempt #2 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 3ms
+2022-01-24 17:46:23.0200 Warn Attempt #3 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 2ms
+2022-01-24 17:46:23.0380 Warn Attempt #4 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 9ms
+2022-01-24 17:46:23.3294 Warn Attempt #5 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 12ms
+2022-01-24 17:46:23.3584 Warn Attempt #6 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 63ms
+2022-01-24 17:46:23.4540 Warn Attempt #7 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 98ms
+2022-01-24 17:46:23.6068 Warn Attempt #8 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 30ms
+2022-01-24 17:46:23.6521 Error FileTarget(Name=allfile): Failed write to file ' C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log'. Exception: System.IO.IOException: Nazwa pliku, nazwa katalogu lub składnia etykiety woluminu jest niepoprawna. : 'C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\ C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at NLog.Internal.FileAppenders.BaseFileAppender.UpdateCreationTime()
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender.Write(Byte[] bytes, Int32 offset, Int32 count)
+   at NLog.Targets.FileTarget.WriteToFile(String fileName, ArraySegment`1 bytes, Boolean initializedNewFile)
+2022-01-24 17:47:00.6868 Warn Attempt #0 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 0ms
+2022-01-24 17:47:00.9089 Warn Attempt #1 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 1ms
+2022-01-24 17:47:00.9333 Warn Attempt #2 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 0ms
+2022-01-24 17:47:00.9426 Warn Attempt #3 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 1ms
+2022-01-24 17:47:00.9600 Warn Attempt #4 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 13ms
+2022-01-24 17:47:01.0130 Warn Attempt #5 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 7ms
+2022-01-24 17:47:01.1532 Warn Attempt #6 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 36ms
+2022-01-24 17:47:01.2145 Warn Attempt #7 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 15ms
+2022-01-24 17:47:01.2431 Warn Attempt #8 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 97ms
+2022-01-24 17:47:01.3593 Error FileTarget(Name=allfile): Failed write to file ' C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log'. Exception: System.IO.IOException: Nazwa pliku, nazwa katalogu lub składnia etykiety woluminu jest niepoprawna. : 'C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\ C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at NLog.Internal.FileAppenders.BaseFileAppender.UpdateCreationTime()
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender.Write(Byte[] bytes, Int32 offset, Int32 count)
+   at NLog.Targets.FileTarget.WriteToFile(String fileName, ArraySegment`1 bytes, Boolean initializedNewFile)
+2022-01-24 17:49:15.7870 Warn Attempt #0 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 0ms
+2022-01-24 17:49:16.2207 Warn Attempt #1 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 1ms
+2022-01-24 17:49:16.2592 Warn Attempt #2 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 0ms
+2022-01-24 17:49:16.3456 Warn Attempt #3 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 3ms
+2022-01-24 17:49:16.3990 Warn Attempt #4 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 14ms
+2022-01-24 17:49:16.4487 Warn Attempt #5 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 16ms
+2022-01-24 17:49:16.5837 Warn Attempt #6 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 44ms
+2022-01-24 17:49:16.6347 Warn Attempt #7 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 30ms
+2022-01-24 17:49:16.6808 Warn Attempt #8 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 78ms
+2022-01-24 17:49:16.8028 Error FileTarget(Name=allfile): Failed write to file ' C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log'. Exception: System.IO.IOException: Nazwa pliku, nazwa katalogu lub składnia etykiety woluminu jest niepoprawna. : 'C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\ C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at NLog.Internal.FileAppenders.BaseFileAppender.UpdateCreationTime()
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender.Write(Byte[] bytes, Int32 offset, Int32 count)
+   at NLog.Targets.FileTarget.WriteToFile(String fileName, ArraySegment`1 bytes, Boolean initializedNewFile)
+2022-01-24 17:50:12.7816 Warn Attempt #0 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 0ms
+2022-01-24 17:50:12.7816 Warn Attempt #1 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 0ms
+2022-01-24 17:50:12.8004 Warn Attempt #2 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 1ms
+2022-01-24 17:50:12.8317 Warn Attempt #3 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 6ms
+2022-01-24 17:50:12.8317 Warn Attempt #4 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 2ms
+2022-01-24 17:50:12.8580 Warn Attempt #5 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 1ms
+2022-01-24 17:50:12.8735 Warn Attempt #6 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 15ms
+2022-01-24 17:50:12.9031 Warn Attempt #7 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 19ms
+2022-01-24 17:50:12.9353 Warn Attempt #8 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 248ms
+2022-01-24 17:50:13.1897 Error FileTarget(Name=allfile): Failed write to file ' C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log'. Exception: System.IO.IOException: Nazwa pliku, nazwa katalogu lub składnia etykiety woluminu jest niepoprawna. : 'C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\ C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at NLog.Internal.FileAppenders.BaseFileAppender.UpdateCreationTime()
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender.Write(Byte[] bytes, Int32 offset, Int32 count)
+   at NLog.Targets.FileTarget.WriteToFile(String fileName, ArraySegment`1 bytes, Boolean initializedNewFile)
+2022-01-24 17:50:39.2739 Warn Attempt #0 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 0ms
+2022-01-24 17:50:39.2813 Warn Attempt #1 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 1ms
+2022-01-24 17:50:39.2813 Warn Attempt #2 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 2ms
+2022-01-24 17:50:39.3116 Warn Attempt #3 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 5ms
+2022-01-24 17:50:39.3271 Warn Attempt #4 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 14ms
+2022-01-24 17:50:39.3573 Warn Attempt #5 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 4ms
+2022-01-24 17:50:39.3732 Warn Attempt #6 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 41ms
+2022-01-24 17:50:39.4214 Warn Attempt #7 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 5ms
+2022-01-24 17:50:39.4394 Warn Attempt #8 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 202ms
+2022-01-24 17:50:39.6543 Error FileTarget(Name=allfile): Failed write to file ' C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log'. Exception: System.IO.IOException: Nazwa pliku, nazwa katalogu lub składnia etykiety woluminu jest niepoprawna. : 'C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\ C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at NLog.Internal.FileAppenders.BaseFileAppender.UpdateCreationTime()
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender.Write(Byte[] bytes, Int32 offset, Int32 count)
+   at NLog.Targets.FileTarget.WriteToFile(String fileName, ArraySegment`1 bytes, Boolean initializedNewFile)
+2022-01-24 17:51:42.8654 Warn Attempt #0 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 0ms
+2022-01-24 17:51:42.8762 Warn Attempt #1 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 1ms
+2022-01-24 17:51:42.9439 Warn Attempt #2 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 2ms
+2022-01-24 17:51:42.9613 Warn Attempt #3 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 0ms
+2022-01-24 17:51:42.9675 Warn Attempt #4 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 1ms
+2022-01-24 17:51:42.9675 Warn Attempt #5 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 9ms
+2022-01-24 17:51:42.9924 Warn Attempt #6 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 5ms
+2022-01-24 17:51:43.0068 Warn Attempt #7 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 95ms
+2022-01-24 17:51:43.1180 Warn Attempt #8 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 121ms
+2022-01-24 17:51:43.2563 Error FileTarget(Name=allfile): Failed write to file ' C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log'. Exception: System.IO.IOException: Nazwa pliku, nazwa katalogu lub składnia etykiety woluminu jest niepoprawna. : 'C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\ C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at NLog.Internal.FileAppenders.BaseFileAppender.UpdateCreationTime()
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender.Write(Byte[] bytes, Int32 offset, Int32 count)
+   at NLog.Targets.FileTarget.WriteToFile(String fileName, ArraySegment`1 bytes, Boolean initializedNewFile)
+2022-01-24 17:51:44.6435 Warn Attempt #0 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 0ms
+2022-01-24 17:51:44.6435 Warn Attempt #1 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 0ms
+2022-01-24 17:51:44.6435 Warn Attempt #2 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 2ms
+2022-01-24 17:51:44.6713 Warn Attempt #3 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 0ms
+2022-01-24 17:51:44.6713 Warn Attempt #4 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 14ms
+2022-01-24 17:51:44.6914 Warn Attempt #5 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 30ms
+2022-01-24 17:51:44.7351 Warn Attempt #6 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 28ms
+2022-01-24 17:51:44.8069 Warn Attempt #7 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 58ms
+2022-01-24 17:51:44.8754 Warn Attempt #8 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 205ms
+2022-01-24 17:51:45.0973 Error FileTarget(Name=allfile): Failed write to file ' C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log'. Exception: System.IO.IOException: Nazwa pliku, nazwa katalogu lub składnia etykiety woluminu jest niepoprawna. : 'C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\ C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at NLog.Internal.FileAppenders.BaseFileAppender.UpdateCreationTime()
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender.Write(Byte[] bytes, Int32 offset, Int32 count)
+   at NLog.Targets.FileTarget.WriteToFile(String fileName, ArraySegment`1 bytes, Boolean initializedNewFile)
+2022-01-24 17:52:28.7106 Warn Attempt #0 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 0ms
+2022-01-24 17:52:28.7210 Warn Attempt #1 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 0ms
+2022-01-24 17:52:28.7210 Warn Attempt #2 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 1ms
+2022-01-24 17:52:28.7210 Warn Attempt #3 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 3ms
+2022-01-24 17:52:28.7464 Warn Attempt #4 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 10ms
+2022-01-24 17:52:28.7623 Warn Attempt #5 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 3ms
+2022-01-24 17:52:28.7783 Warn Attempt #6 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 0ms
+2022-01-24 17:52:28.7798 Warn Attempt #7 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 76ms
+2022-01-24 17:52:28.8729 Warn Attempt #8 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 68ms
+2022-01-24 17:52:28.9552 Error FileTarget(Name=allfile): Failed write to file ' C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log'. Exception: System.IO.IOException: Nazwa pliku, nazwa katalogu lub składnia etykiety woluminu jest niepoprawna. : 'C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\ C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at NLog.Internal.FileAppenders.BaseFileAppender.UpdateCreationTime()
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender.Write(Byte[] bytes, Int32 offset, Int32 count)
+   at NLog.Targets.FileTarget.WriteToFile(String fileName, ArraySegment`1 bytes, Boolean initializedNewFile)
+2022-01-24 17:56:38.6204 Warn Attempt #0 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 0ms
+2022-01-24 17:56:38.6257 Warn Attempt #1 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 1ms
+2022-01-24 17:56:38.6670 Warn Attempt #2 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 3ms
+2022-01-24 17:56:38.6785 Warn Attempt #3 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 4ms
+2022-01-24 17:56:38.6933 Warn Attempt #4 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 3ms
+2022-01-24 17:56:38.7086 Warn Attempt #5 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 7ms
+2022-01-24 17:56:38.7250 Warn Attempt #6 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 4ms
+2022-01-24 17:56:38.7429 Warn Attempt #7 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 65ms
+2022-01-24 17:56:38.8190 Warn Attempt #8 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 61ms
+2022-01-24 17:56:38.8963 Error FileTarget(Name=allfile): Failed write to file ' C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log'. Exception: System.IO.IOException: Nazwa pliku, nazwa katalogu lub składnia etykiety woluminu jest niepoprawna. : 'C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\ C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at NLog.Internal.FileAppenders.BaseFileAppender.UpdateCreationTime()
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender.Write(Byte[] bytes, Int32 offset, Int32 count)
+   at NLog.Targets.FileTarget.WriteToFile(String fileName, ArraySegment`1 bytes, Boolean initializedNewFile)
+2022-01-24 17:56:50.2719 Warn Attempt #0 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 0ms
+2022-01-24 17:56:50.2921 Warn Attempt #1 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 1ms
+2022-01-24 17:56:50.3003 Warn Attempt #2 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 3ms
+2022-01-24 17:56:50.3154 Warn Attempt #3 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 3ms
+2022-01-24 17:56:50.3271 Warn Attempt #4 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 10ms
+2022-01-24 17:56:50.3430 Warn Attempt #5 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 22ms
+2022-01-24 17:56:50.3755 Warn Attempt #6 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 43ms
+2022-01-24 17:56:50.4229 Warn Attempt #7 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 57ms
+2022-01-24 17:56:50.4994 Warn Attempt #8 to open  C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log failed. Sleeping for 65ms
+2022-01-24 17:56:50.5785 Error FileTarget(Name=allfile): Failed write to file ' C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log'. Exception: System.IO.IOException: Nazwa pliku, nazwa katalogu lub składnia etykiety woluminu jest niepoprawna. : 'C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\ C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\logs\nlog-all-2022-01-24.log'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at NLog.Internal.FileAppenders.BaseFileAppender.UpdateCreationTime()
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender.Write(Byte[] bytes, Int32 offset, Int32 count)
+   at NLog.Targets.FileTarget.WriteToFile(String fileName, ArraySegment`1 bytes, Boolean initializedNewFile)

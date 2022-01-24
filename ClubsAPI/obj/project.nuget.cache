@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "YgYWfLWUggYN+Zr0sZhkptADi7ynd32fl0seTWF3h/xFg7NRTTURZr03OWxje5L8BaPDKT3vsU2R9nB3prwIuQ==",
+  "dgSpecHash": "KSgv9bsBoTqcI+D7rYbpOq6h2KOESSWBNsg4rGjCq7Bko45HGPMP6DSO0xS0NuahGa+r8MbGDQ8ZN4lnJ6kVOA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Dell\\Desktop\\c#\\ClubsAPI\\ClubsAPI\\ClubsAPI.csproj",
   "expectedPackageFiles": [
@@ -18,8 +18,8 @@
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.applicationinsights.perfcountercollector\\2.15.0\\microsoft.applicationinsights.perfcountercollector.2.15.0.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.applicationinsights.windowsserver\\2.15.0\\microsoft.applicationinsights.windowsserver.2.15.0.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.applicationinsights.windowsserver.telemetrychannel\\2.15.0\\microsoft.applicationinsights.windowsserver.telemetrychannel.2.15.0.nupkg.sha512",
-    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.4\\microsoft.aspnet.webapi.client.5.2.4.nupkg.sha512",
-    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.aspnet.webapi.core\\5.2.4\\microsoft.aspnet.webapi.core.5.2.4.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.aspnet.webapi.core\\5.2.7\\microsoft.aspnet.webapi.core.5.2.7.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.2\\microsoft.aspnetcore.authentication.jwtbearer.5.0.2.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\5.0.2\\microsoft.aspnetcore.authentication.openidconnect.5.0.2.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.aspnetcore.cors\\2.2.0\\microsoft.aspnetcore.cors.2.2.0.nupkg.sha512",
@@ -214,7 +214,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Pakiet „Microsoft.AspNet.WebApi.Core 5.2.4” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8” zamiast platformy docelowej projektu „net5.0”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
+      "message": "Pakiet „Microsoft.AspNet.WebApi.Core 5.2.7” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8” zamiast platformy docelowej projektu „net5.0”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
       "libraryId": "Microsoft.AspNet.WebApi.Core",
       "targetGraphs": [
         "net5.0"

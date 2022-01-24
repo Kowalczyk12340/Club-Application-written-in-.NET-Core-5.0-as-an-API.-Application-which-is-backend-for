@@ -14,6 +14,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using ClubsAPI.Services.Interfaces;
 using ClubsAPI.Exceptions;
+using System.Text;
 
 namespace ClubsAPI.Services
 {
@@ -76,6 +77,25 @@ namespace ClubsAPI.Services
 
       _context.Remove(nationality);
       await _context.SaveChangesAsync();
+    }
+
+    public string SaveToCsv(IEnumerable<NationalityDto> components)
+    {
+      var headers = "Id;Name;";
+
+      var csv = new StringBuilder(headers);
+
+      csv.Append(Environment.NewLine);
+
+      foreach (var component in components)
+      {
+        csv.Append(component.GetExportObject());
+        csv.Append(Environment.NewLine);
+      }
+      csv.Append($"Count: {components.Count()}");
+      csv.Append(Environment.NewLine);
+
+      return csv.ToString();
     }
   }
 }

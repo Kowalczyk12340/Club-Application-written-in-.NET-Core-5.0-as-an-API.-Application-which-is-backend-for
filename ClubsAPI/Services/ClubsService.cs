@@ -15,6 +15,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using ClubsAPI.Services.Interfaces;
 using ClubsAPI.Exceptions;
+using System.Text;
 
 namespace ClubsAPI.Services
 {
@@ -253,6 +254,25 @@ namespace ClubsAPI.Services
       _context.Remove(club);
       await _context.SaveChangesAsync();
       await _fileStorageService.DeleteFile(club.Poster, container);
+    }
+
+    public string SaveToCsv(IEnumerable<ClubDto> components)
+    {
+      var headers = "Id;ClubName;Summary;Description;HasOwnStadium;ReleaseDate;Poster;AverageVote;UserVote;Nationalities.Count;ClubLeagues.Count;Players.Count;Coaches.Count;";
+
+      var csv = new StringBuilder(headers);
+
+      csv.Append(Environment.NewLine);
+
+      foreach (var component in components)
+      {
+        csv.Append(component.GetExportObject());
+        csv.Append(Environment.NewLine);
+      }
+      csv.Append($"Count: {components.Count()}");
+      csv.Append(Environment.NewLine);
+
+      return csv.ToString();
     }
   }
 }

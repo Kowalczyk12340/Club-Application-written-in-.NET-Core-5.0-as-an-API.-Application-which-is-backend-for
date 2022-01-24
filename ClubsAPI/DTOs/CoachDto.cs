@@ -12,5 +12,10 @@ namespace ClubsAPI.DTOs
     public DateTime DateOfBirth { get; set; }
     public string Biography { get; set; }
     public string Picture { get; set; }
+
+    public string GetExportObject()
+    {
+      return $"{Id};{Name};{DateOfBirth};{Biography};{Picture};";
+    }
   }
 }

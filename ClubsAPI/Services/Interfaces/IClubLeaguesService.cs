@@ -20,5 +20,6 @@ namespace ClubsAPI.Services.Interfaces
     Task Post(ClubLeagueCreationDto clubLeagueCreation);
     Task Put(int id, ClubLeagueCreationDto clubLeagueCreationDto);
     Task Delete(int id);
+    string SaveToCsv(IEnumerable<ClubLeagueDto> components);
   }
 }

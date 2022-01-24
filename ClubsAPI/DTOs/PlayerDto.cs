@@ -5,12 +5,17 @@ using System.Threading.Tasks;
 
 namespace ClubsAPI.DTOs
 {
-    public class PlayerDto
+  public class PlayerDto
+  {
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public DateTime DateOfBirth { get; set; }
+    public string Biography { get; set; }
+    public string Picture { get; set; }
+
+    public string GetExportObject()
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public DateTime DateOfBirth { get; set; }
-        public string Biography { get; set; }
-        public string Picture { get; set; }
+      return $"{Id};{Name};{DateOfBirth};{Biography};{Picture};";
     }
+  }
 }

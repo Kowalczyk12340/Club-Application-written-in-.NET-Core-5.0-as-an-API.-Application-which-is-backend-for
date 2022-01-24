@@ -37,7 +37,7 @@
           "Azure.Storage.Blobs": "12.8.0",
           "FluentValidation": "10.3.6",
           "Microsoft.ApplicationInsights.AspNetCore": "2.15.0",
-          "Microsoft.AspNet.WebApi.Core": "5.2.4",
+          "Microsoft.AspNet.WebApi.Core": "5.2.7",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "5.0.2",
           "Microsoft.AspNetCore.Authentication.OpenIdConnect": "5.0.2",
           "Microsoft.AspNetCore.Cors": "2.2.0",
@@ -564,29 +564,29 @@
           "lib/netstandard2.0/Microsoft.AI.ServerTelemetryChannel.dll": {}
         }
       },
-      "Microsoft.AspNet.WebApi.Client/5.2.4": {
+      "Microsoft.AspNet.WebApi.Client/5.2.7": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
           "Newtonsoft.Json.Bson": "1.0.1"
         },
         "runtime": {
           "lib/netstandard2.0/System.Net.Http.Formatting.dll": {
-            "assemblyVersion": "5.2.4.0",
-            "fileVersion": "5.2.60201.0"
+            "assemblyVersion": "5.2.7.0",
+            "fileVersion": "5.2.61128.0"
           }
         },
         "compile": {
           "lib/netstandard2.0/System.Net.Http.Formatting.dll": {}
         }
       },
-      "Microsoft.AspNet.WebApi.Core/5.2.4": {
+      "Microsoft.AspNet.WebApi.Core/5.2.7": {
         "dependencies": {
-          "Microsoft.AspNet.WebApi.Client": "5.2.4"
+          "Microsoft.AspNet.WebApi.Client": "5.2.7"
         },
         "runtime": {
           "lib/net45/System.Web.Http.dll": {
-            "assemblyVersion": "5.2.4.0",
-            "fileVersion": "5.2.60201.0"
+            "assemblyVersion": "5.2.7.0",
+            "fileVersion": "5.2.61128.0"
           }
         },
         "compile": {
@@ -4177,19 +4177,19 @@
       "path": "microsoft.applicationinsights.windowsserver.telemetrychannel/2.15.0",
       "hashPath": "microsoft.applicationinsights.windowsserver.telemetrychannel.2.15.0.nupkg.sha512"
     },
-    "Microsoft.AspNet.WebApi.Client/5.2.4": {
+    "Microsoft.AspNet.WebApi.Client/5.2.7": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-OdBVC2bQWkf9qDd7Mt07ev4SwIdu6VmLBMTWC0D5cOP/HWSXyv/77otwtXVrAo42duNjvXOjzjP5oOI9m1+DTQ==",
-      "path": "microsoft.aspnet.webapi.client/5.2.4",
-      "hashPath": "microsoft.aspnet.webapi.client.5.2.4.nupkg.sha512"
+      "sha512": "sha512-/76fAHknzvFqbznS6Uj2sOyE9rJB3PltY+f53TH8dX9RiGhk02EhuFCWljSj5nnqKaTsmma8DFR50OGyQ4yJ1g==",
+      "path": "microsoft.aspnet.webapi.client/5.2.7",
+      "hashPath": "microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512"
     },
-    "Microsoft.AspNet.WebApi.Core/5.2.4": {
+    "Microsoft.AspNet.WebApi.Core/5.2.7": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-rbLh178vmOWxhFQgiVkKmZyG53XEdyBZJbCsV36a4VxokIBzSRYUaMkXWEwJTy83PoHhPiDHNQFN3A3BQzwhtg==",
-      "path": "microsoft.aspnet.webapi.core/5.2.4",
-      "hashPath": "microsoft.aspnet.webapi.core.5.2.4.nupkg.sha512"
+      "sha512": "sha512-gM2QzApnHdy1FbKUJ/ROGJSm69P2G+HMoVd/t5Vq1O/zZ5TI4IKC9PX6nUfRt/NHgebZOIWHpB4/4K4inuy4yQ==",
+      "path": "microsoft.aspnet.webapi.core/5.2.7",
+      "hashPath": "microsoft.aspnet.webapi.core.5.2.7.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authentication.JwtBearer/5.0.2": {
       "type": "package",

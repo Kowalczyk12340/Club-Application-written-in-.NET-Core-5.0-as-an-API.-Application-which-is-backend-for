@@ -5,11 +5,16 @@ using System.Threading.Tasks;
 
 namespace ClubsAPI.DTOs
 {
-    public class ClubLeagueDto
+  public class ClubLeagueDto
+  {
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public double Latitude { get; set; }
+    public double Longitude { get; set; }
+
+    public string GetExportObject()
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public double Latitude { get; set; }
-        public double Longitude { get; set; }
+      return $"{Id};{Name};{Latitude};{Longitude};";
     }
+  }
 }

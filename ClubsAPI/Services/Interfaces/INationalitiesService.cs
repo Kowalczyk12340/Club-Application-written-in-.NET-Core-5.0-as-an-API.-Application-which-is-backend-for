@@ -22,5 +22,6 @@ namespace ClubsAPI.Services.Interfaces
     Task Post([FromBody] NationalityCreationDto nationalityCreationDto);
     Task Put(int id, [FromBody] NationalityCreationDto nationalityCreationDto);
     Task Delete(int id);
+    string SaveToCsv(IEnumerable<NationalityDto> components);
   }
 }

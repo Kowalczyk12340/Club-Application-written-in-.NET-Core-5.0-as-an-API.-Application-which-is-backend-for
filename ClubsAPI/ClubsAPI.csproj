@@ -22,7 +22,7 @@
 		<PackageReference Include="Azure.Storage.Blobs" Version="12.8.0" />
 		<PackageReference Include="FluentValidation" Version="10.3.6" />
 		<PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.15.0" />
-		<PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.4" />
+		<PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.7" />
 		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.2" NoWarn="NU1605" />
 		<PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="5.0.2" NoWarn="NU1605" />
 		<PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />

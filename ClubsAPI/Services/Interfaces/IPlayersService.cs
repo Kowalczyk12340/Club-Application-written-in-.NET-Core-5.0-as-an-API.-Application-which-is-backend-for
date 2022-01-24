@@ -22,5 +22,6 @@ namespace ClubsAPI.Services.Interfaces
     Task Post([FromForm] PlayerCreationDto playerCreationDto);
     Task Put(int id, [FromForm] PlayerCreationDto playerCreationDto);
     Task Delete(int id);
+    string SaveToCsv(IEnumerable<PlayerDto> components);
   }
 }

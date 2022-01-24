@@ -13,6 +13,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using ClubsAPI.Services.Interfaces;
 using ClubsAPI.Exceptions;
+using System;
+using System.Text;
 
 namespace ClubsAPI.Services
 {
@@ -110,6 +112,25 @@ namespace ClubsAPI.Services
       await _context.SaveChangesAsync();
 
       await _fileStorageService.DeleteFile(player.Picture, containerName);
+    }
+
+    public string SaveToCsv(IEnumerable<PlayerDto> components)
+    {
+      var headers = "Id;Name;DateOfBirth;Biography;Picture;";
+
+      var csv = new StringBuilder(headers);
+
+      csv.Append(Environment.NewLine);
+
+      foreach (var component in components)
+      {
+        csv.Append(component.GetExportObject());
+        csv.Append(Environment.NewLine);
+      }
+      csv.Append($"Count: {components.Count()}");
+      csv.Append(Environment.NewLine);
+
+      return csv.ToString();
     }
   }
 }

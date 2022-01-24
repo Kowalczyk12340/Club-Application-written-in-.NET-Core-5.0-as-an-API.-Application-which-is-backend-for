@@ -22,6 +22,7 @@ namespace ClubsAPI.Services.Interfaces
     Task<ClubDto> Get(int id);
     Task<List<ClubDto>> Filter([FromQuery] FilterClubsDto filterClubsDto);
     Task<ClubPostGetDto> PostGet();
+    string SaveToCsv(IEnumerable<ClubDto> components);
     Task<int> Post([FromForm] ClubCreationDto clubCreationDto);
     Task<ClubPutGetDto> PutGet(int id);
     Task Put(int id, [FromForm] ClubCreationDto clubCreationDto);
