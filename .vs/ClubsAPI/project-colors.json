@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "0d768e26-4dca-4075-a4cf-688ea5b0502e": {
+      "ProjectGuid": "0d768e26-4dca-4075-a4cf-688ea5b0502e",
+      "DisplayName": "ClubsAPI",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
