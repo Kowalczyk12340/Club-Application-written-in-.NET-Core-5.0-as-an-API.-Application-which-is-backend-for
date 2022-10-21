@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Globalization;
 using Microsoft.AspNetCore.Identity;
 using ClubsAPI.Data;
+using System.Threading.Tasks;
 using ClubsAPI.Entities;
 
-namespace SportAPI.Sport.Seeders
+namespace ClubsAPI.Seeders
 {
-  public class ClubSeeder
+  public class ClubSeeder : IClubSeeder
   {
     private readonly ApplicationDataContext _dbContext;
     private readonly IPasswordHasher<IdentityUser> _passwordHasher;
@@ -19,7 +19,7 @@ namespace SportAPI.Sport.Seeders
       _passwordHasher = passwordHasher;
     }
 
-    public void Seed()
+    public async Task Seed()
     {
       if (_dbContext.Database.CanConnect())
       {
@@ -27,39 +27,39 @@ namespace SportAPI.Sport.Seeders
         {
           var nationalities = GetNationalities();
           _dbContext.Nationalities.AddRange(nationalities);
-          _dbContext.SaveChanges();
+          await _dbContext.SaveChangesAsync();
         }
         if (!_dbContext.Clubs.Any())
         {
           var clubs = GetClubs();
           _dbContext.Clubs.AddRange(clubs);
-          _dbContext.SaveChanges();
+          await _dbContext.SaveChangesAsync();
         }
         if (!_dbContext.Players.Any())
         {
           var players = GetPlayers();
           _dbContext.Players.AddRange(players);
-          _dbContext.SaveChanges();
+          await _dbContext.SaveChangesAsync();
         }
         if (!_dbContext.Coach.Any())
         {
           var coaches = GetCoaches();
           _dbContext.Coach.AddRange(coaches);
-          _dbContext.SaveChanges();
+          await _dbContext.SaveChangesAsync();
         }
 
         if (!_dbContext.ClubLeagues.Any())
         {
           var clubLeagues = GetClubLeagues();
           _dbContext.ClubLeagues.AddRange(clubLeagues);
-          _dbContext.SaveChanges();
+          await _dbContext.SaveChangesAsync();
         }
 
         if (!_dbContext.Users.Any())
         {
           var users = GetUsers();
           _dbContext.Users.AddRange(users);
-          _dbContext.SaveChanges();
+          await _dbContext.SaveChangesAsync();
         }
       }
     }
@@ -145,7 +145,7 @@ namespace SportAPI.Sport.Seeders
           "pozycji pomocnika w polskim klubie Wieczysta Kraków. W latach 2008–2018" +
           " reprezentant Polski. Uczestnik Mistrzostw Europy 2016 oraz Mistrzostw" +
           " Świata 2018",
-          DateOfBirth = new DateTime(1992,11,11,23,23,21),          
+          DateOfBirth = new DateTime(1992,11,11,23,23,21),
         },
         new Player
         {

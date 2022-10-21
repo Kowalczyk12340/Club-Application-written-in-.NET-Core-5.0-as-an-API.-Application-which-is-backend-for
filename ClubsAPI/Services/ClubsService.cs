@@ -71,7 +71,7 @@ namespace ClubsAPI.Services
           .Include(x => x.ClubsCoaches).ThenInclude(x => x.Coach)
           .FirstOrDefaultAsync(x => x.Id == id);
 
-      if (club == null)
+      if (club is null)
       {
         throw new NotFoundException("Nie znaleziono elementu");
       }
@@ -90,12 +90,12 @@ namespace ClubsAPI.Services
           var user = await _userManager.FindByEmailAsync(email);
           var userId = user.Id;
 
-          var ratingDb = await _context.Ratings.FirstOrDefaultAsync(x => x.ClubId == id
-          && x.UserId == userId);
+          var rating = await _context.Ratings.FirstOrDefaultAsync(x => x.ClubId == id
+            && x.UserId == userId);
 
-          if (ratingDb != null)
+          if (rating != null)
           {
-            userVote = ratingDb.Rate;
+            userVote = rating.Rate;
           }
         }
       }
@@ -173,11 +173,11 @@ namespace ClubsAPI.Services
       var club = clubActionResult;
 
       var nationalitieSelectedIds = club.Nationalities.Select(x => x.Id).ToList();
-      var nonSelectedNationalities = await _context.Nationalities.Where(x => 
+      var nonSelectedNationalities = await _context.Nationalities.Where(x =>
       !nationalitieSelectedIds.Contains(x.Id)).ToListAsync();
 
       var clubLeaguesIds = club.ClubLeagues.Select(x => x.Id).ToList();
-      var nonSelectedClubLeagues = await _context.ClubLeagues.Where(x => 
+      var nonSelectedClubLeagues = await _context.ClubLeagues.Where(x =>
       !nationalitieSelectedIds.Contains(x.Id)).ToListAsync();
 
       var nonSelectedNationalitiesDtos = _mapper.Map<List<NationalityDto>>(nonSelectedNationalities);
