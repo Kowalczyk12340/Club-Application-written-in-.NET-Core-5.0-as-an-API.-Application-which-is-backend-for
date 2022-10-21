@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Identity;
 using ClubsAPI.Data;
-using System.Threading.Tasks;
 using ClubsAPI.Entities;
 
 namespace ClubsAPI.Seeders
 {
-  public class ClubSeeder : IClubSeeder
+  public class ClubSeeder
   {
     private readonly ApplicationDataContext _dbContext;
     private readonly IPasswordHasher<IdentityUser> _passwordHasher;
@@ -19,7 +18,7 @@ namespace ClubsAPI.Seeders
       _passwordHasher = passwordHasher;
     }
 
-    public async Task Seed()
+    public void Seed()
     {
       if (_dbContext.Database.CanConnect())
       {
@@ -27,39 +26,39 @@ namespace ClubsAPI.Seeders
         {
           var nationalities = GetNationalities();
           _dbContext.Nationalities.AddRange(nationalities);
-          await _dbContext.SaveChangesAsync();
+          _dbContext.SaveChanges();
         }
         if (!_dbContext.Clubs.Any())
         {
           var clubs = GetClubs();
           _dbContext.Clubs.AddRange(clubs);
-          await _dbContext.SaveChangesAsync();
+          _dbContext.SaveChanges();
         }
         if (!_dbContext.Players.Any())
         {
           var players = GetPlayers();
           _dbContext.Players.AddRange(players);
-          await _dbContext.SaveChangesAsync();
+          _dbContext.SaveChanges();
         }
         if (!_dbContext.Coach.Any())
         {
           var coaches = GetCoaches();
           _dbContext.Coach.AddRange(coaches);
-          await _dbContext.SaveChangesAsync();
+          _dbContext.SaveChanges();
         }
 
         if (!_dbContext.ClubLeagues.Any())
         {
           var clubLeagues = GetClubLeagues();
           _dbContext.ClubLeagues.AddRange(clubLeagues);
-          await _dbContext.SaveChangesAsync();
+          _dbContext.SaveChanges();
         }
 
         if (!_dbContext.Users.Any())
         {
           var users = GetUsers();
           _dbContext.Users.AddRange(users);
-          await _dbContext.SaveChangesAsync();
+          _dbContext.SaveChanges();
         }
       }
     }

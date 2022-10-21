@@ -6,7 +6,6 @@ C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\bin\Debug\net5.0\ClubsAPI.deps.json
 C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\bin\Debug\net5.0\ClubsAPI.runtimeconfig.json
 C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\bin\Debug\net5.0\ClubsAPI.runtimeconfig.dev.json
 C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\bin\Debug\net5.0\ClubsAPI.dll
-C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\bin\Debug\net5.0\ref\ClubsAPI.dll
 C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\bin\Debug\net5.0\ClubsAPI.pdb
 C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\bin\Debug\net5.0\AutoMapper.dll
 C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
@@ -100,3 +99,4 @@ C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\bin\Debug\net5.0\System.Web.Http.dll
 C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
 C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\bin\Debug\net5.0\FluentValidation.dll
 C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\obj\Debug\net5.0\ClubsAPI.csproj.CopyComplete
+C:\Users\Dell\Desktop\c#\ClubsAPI\ClubsAPI\obj\Debug\net5.0\refint\ClubsAPI.dll
